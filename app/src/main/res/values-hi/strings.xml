@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">स्मार्ट उधार</string>
+    <string name="app_tagline">स्मार्ट हिसाब, आसान व्यापार</string>
+
+    <string name="nav_home">होम</string>
+    <string name="nav_customers">ग्राहक</string>
+    <string name="nav_products">प्रोडक्ट्स</string>
+    <string name="nav_reports">रिपोर्ट्स</string>
+    <string name="nav_settings">सेटिंग्स</string>
+
+    <string name="todays_sales">आज की बिक्री</string>
+    <string name="total_udhar">कुल उधार</string>
+    <string name="payments_received">प्राप्त भुगतान</string>
+    <string name="total_customers">कुल ग्राहक</string>
+    <string name="total_products">कुल प्रोडक्ट्स</string>
+    <string name="quick_actions">त्वरित कार्य</string>
+    <string name="add_udhar">उधार जोड़ें</string>
+    <string name="receive_payment">भुगतान प्राप्त करें</string>
+    <string name="add_customer">ग्राहक जोड़ें</string>
+    <string name="add_product">प्रोडक्ट जोड़ें</string>
+    <string name="recent_transactions">हाल के लेनदेन</string>
+    <string name="send_whatsapp">व्हाट्सएप रिमाइंडर</string>
+    <string name="voice_entry">वॉइस प्रविष्टि</string>
+    <string name="ai_assistant">एआई सहायक</string>
+</resources>

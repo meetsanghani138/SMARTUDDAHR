@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Smart Udhar Brand Palette -->
+    <color name="primary_green">#16834A</color>
+    <color name="dark_green">#105C38</color>
+    <color name="light_green">#E8F5ED</color>
+    <color name="bg_light">#F6F8F7</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="text_primary">#17231D</color>
+    <color name="text_secondary">#758078</color>
+    <color name="border_color">#E7ECE8</color>
+    <color name="success_color">#16A05A</color>
+    <color name="warning_color">#F59E0B</color>
+    <color name="danger_color">#DC4545</color>
+    <color name="accent_blue">#2563EB</color>
+
+    <!-- Standard colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="divider_color">#E2E8F0</color>
+    <color name="shadow_color">#1F000000</color>
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smart Udhar</string>
+    <string name="app_tagline">Smart Hisab, Easy Vyapar</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_customers">Customers</string>
+    <string name="nav_products">Products</string>
+    <string name="nav_reports">Reports</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Auth & Shop Setup -->
+    <string name="login_title">Welcome Back</string>
+    <string name="login_subtitle">Sign in to manage your shop</string>
+    <string name="email_or_phone">Email or Phone Number</string>
+    <string name="password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="register_button">Register New Account</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="register_title">Create Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email">Email Address</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="shop_setup_title">Shop Setup</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="shop_address">Shop Address</string>
+    <string name="shop_phone">Shop Phone</string>
+    <string name="shop_type">Shop Type</string>
+    <string name="save_shop">Save Shop Profile</string>
+
+    <!-- Dashboard -->
+    <string name="todays_sales">Today\'s Sales</string>
+    <string name="total_udhar">Total Udhar</string>
+    <string name="payments_received">Payments Received</string>
+    <string name="total_customers">Total Customers</string>
+    <string name="total_products">Total Products</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="add_udhar">Add Udhar</string>
+    <string name="receive_payment">Receive Payment</string>
+    <string name="add_customer">Add Customer</string>
+    <string name="add_product">Add Product</string>
+    <string name="recent_transactions">Recent Transactions</string>
+    <string name="low_stock_products">Low Stock Products</string>
+    <string name="recent_customers">Recent Customers</string>
+    <string name="ai_assistant">AI Assistant</string>
+    <string name="sync_status">Sync Status</string>
+    <string name="status_offline">Offline</string>
+    <string name="status_synced">Synced</string>
+
+    <!-- Customer -->
+    <string name="customer_list">Customers</string>
+    <string name="customer_details">Customer Details</string>
+    <string name="edit_customer">Edit Customer</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="address">Address</string>
+    <string name="opening_balance">Opening Balance</string>
+    <string name="current_outstanding">Current Outstanding</string>
+    <string name="notes">Notes</string>
+    <string name="send_whatsapp">WhatsApp Reminder</string>
+    <string name="delete_customer">Archive Customer</string>
+    <string name="search_customer">Search customer by name or phone...</string>
+    <string name="confirm_delete_customer">Are you sure you want to archive this customer?</string>
+
+    <!-- Product & Inventory -->
+    <string name="product_list">Products &amp; Inventory</string>
+    <string name="product_details">Product Details</string>
+    <string name="edit_product">Edit Product</string>
+    <string name="sku">SKU / Code</string>
+    <string name="product_name">Product Name</string>
+    <string name="category">Category</string>
+    <string name="purchase_price">Purchase Price (₹)</string>
+    <string name="selling_price">Selling Price (₹)</string>
+    <string name="stock_quantity">Stock Quantity</string>
+    <string name="unit">Unit (Pcs, Box, Packet, etc.)</string>
+    <string name="low_stock_alert">Low Stock Alert</string>
+    <string name="search_product">Search products...</string>
+
+    <!-- Udhar & Payment -->
+    <string name="select_customer">Select Customer</string>
+    <string name="select_products">Select Products</string>
+    <string name="bill_review">Review Bill</string>
+    <string name="previous_balance">Previous Outstanding</string>
+    <string name="new_credit">New Credit Amount</string>
+    <string name="new_outstanding">New Outstanding Balance</string>
+    <string name="confirm_and_save">Confirm &amp; Save</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="cash">Cash</string>
+    <string name="upi">UPI</string>
+    <string name="bank_transfer">Bank Transfer</string>
+    <string name="amount_received">Amount Received (₹)</string>
+    <string name="reference_number">Ref / UTR Number</string>
+    <string name="remaining_balance">Remaining Balance</string>
+
+    <!-- Transactions & Receipts -->
+    <string name="transaction_history">Transaction History</string>
+    <string name="transaction_details">Transaction Details</string>
+    <string name="receipt">Receipt</string>
+    <string name="generate_pdf">Generate PDF</string>
+    <string name="share_receipt">Share Receipt</string>
+    <string name="print_receipt">Print Receipt</string>
+
+    <!-- WhatsApp Reminders -->
+    <string name="whatsapp_reminders">WhatsApp Reminders</string>
+    <string name="select_language">Select Language</string>
+    <string name="send_message">Send WhatsApp Message</string>
+    <string name="reminder_template_en">Hello %1$s, your outstanding balance at %2$s is ₹%3$s. Please make the payment at your convenience. Thank you!</string>
+    <string name="reminder_template_gu">નમસ્તે %1$s, તમારી પાસે %2$s નુ ₹%3$s ઉધાર બાકી છે. કૃપા કરીને અનુકૂળ સમયે ચુકવણી કરશો. આભાર!</string>
+    <string name="reminder_template_hi">नमस्ते %1$s, आपकी %2$s पर ₹%3$s बकाया है। कृपया सुविधानुसार भुगतान करें। धन्यवाद!</string>
+
+    <!-- Reports -->
+    <string name="reports_dashboard">Business Reports</string>
+    <string name="daily_sales">Daily Sales</string>
+    <string name="monthly_sales">Monthly Sales</string>
+    <string name="udhar_report">Udhar Report</string>
+    <string name="payment_report">Payment Collection Report</string>
+    <string name="inventory_report">Inventory Report</string>
+    <string name="top_customers">Top Customers</string>
+    <string name="top_products">Top Selling Products</string>
+
+    <!-- Voice & AI -->
+    <string name="voice_entry">Voice Purchase Entry</string>
+    <string name="speak_now">Speak now (e.g. "Add 1 Vimal and 2 Cold Drink")</string>
+    <string name="ai_insights">AI Business Insights</string>
+    <string name="daily_summary">Daily Executive Summary</string>
+
+    <!-- Staff & Permissions -->
+    <string name="staff_management">Staff Management</string>
+    <string name="add_staff">Add Staff Member</string>
+    <string name="role_owner">Owner</string>
+    <string name="role_manager">Manager</string>
+    <string name="role_staff">Staff</string>
+
+    <!-- Settings & Backup -->
+    <string name="settings">Settings</string>
+    <string name="language">Language / ભાષા / भाषा</string>
+    <string name="backup_restore">Backup &amp; Restore</string>
+    <string name="backup_data">Export Backup (JSON)</string>
+    <string name="restore_data">Import Restore (JSON)</string>
+    <string name="security">Security &amp; PIN Lock</string>
+    <string name="about">About Smart Udhar</string>
+    <string name="logout">Logout</string>
+
+    <!-- Actions & Common -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="confirm">Confirm</string>
+    <string name="success">Success</string>
+    <string name="error">Error</string>
+    <string name="loading">Loading...</string>
+    <string name="no_data">No data available</string>
+</resources>

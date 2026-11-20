@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">સ્માર્ટ ઉધાર</string>
+    <string name="app_tagline">સ્માર્ટ હિસાબ, સરળ વ્યાપાર</string>
+
+    <string name="nav_home">હોમ</string>
+    <string name="nav_customers">ગ્રાહકો</string>
+    <string name="nav_products">પ્રોડક્ટ્સ</string>
+    <string name="nav_reports">રિપોર્ટ્સ</string>
+    <string name="nav_settings">સેટિંગ્સ</string>
+
+    <string name="todays_sales">આજનું વેચાણ</string>
+    <string name="total_udhar">કુલ ઉધાર</string>
+    <string name="payments_received">મળેલી ચુકવણી</string>
+    <string name="total_customers">કુલ ગ્રાહકો</string>
+    <string name="total_products">કુલ પ્રોડક્ટ્સ</string>
+    <string name="quick_actions">ઝડપી કાર્યો</string>
+    <string name="add_udhar">ઉધાર ઉમેરો</string>
+    <string name="receive_payment">ચુકવણી મેળવો</string>
+    <string name="add_customer">ગ્રાહક ઉમેરો</string>
+    <string name="add_product">પ્રોડક્ટ ઉમેરો</string>
+    <string name="recent_transactions">તાજેતરના વ્યવહારો</string>
+    <string name="send_whatsapp">વોટ્સએપ રીમાઇન્ડર</string>
+    <string name="voice_entry">વોઈસ એન્ટ્રી</string>
+    <string name="ai_assistant">એઆઈ આસિસ્ટન્ટ</string>
+</resources>
