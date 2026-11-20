@@ -55,6 +55,14 @@ class SettingsFragment : Fragment() {
             showBackupDialog()
         }
 
+        binding.btnDeveloperCredits.setOnClickListener {
+            showDeveloperCreditsDialog()
+        }
+
+        binding.btnAboutApp.setOnClickListener {
+            showAboutAppDialog()
+        }
+
         binding.btnLogout.setOnClickListener {
             sessionManager.logout()
             val intent = Intent(requireContext(), LoginActivity::class.java).apply {
@@ -62,6 +70,44 @@ class SettingsFragment : Fragment() {
             }
             startActivity(intent)
         }
+    }
+
+    private fun showDeveloperCreditsDialog() {
+        AlertDialog.Builder(requireContext())
+            .setTitle("Developer Credits")
+            .setMessage(
+                """
+                👨‍💻 Developer Name: Dhruv Nathani
+                
+                🎓 Guided By: Prof. Jiger Dave
+                
+                🏛️ University: Marwadi University
+                """.trimIndent()
+            )
+            .setPositiveButton("OK", null)
+            .show()
+    }
+
+    private fun showAboutAppDialog() {
+        AlertDialog.Builder(requireContext())
+            .setTitle("About Smart Udhar")
+            .setMessage(
+                """
+                📱 Smart Udhar v1.0.0
+                "Smart Hisab, Easy Vyapar"
+                
+                A digital ledger & credit accounting application built for pan shops and Kirana retailers.
+                
+                Features:
+                • Customer Udhar Management
+                • Payment Collection & Ledger
+                • Product Inventory
+                • Native PDF Receipts & WhatsApp Reminders
+                • Offline-first SQLite database
+                """.trimIndent()
+            )
+            .setPositiveButton("Close", null)
+            .show()
     }
 
     private fun showLanguageDialog() {
