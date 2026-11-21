@@ -3,46 +3,79 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_header_gradient"
-    android:gravity="center"
+    android:background="@drawable/bg_splash_gradient"
     android:padding="24dp">
 
+    <!-- Center Content Block -->
     <LinearLayout
+        android:id="@+id/centerBlock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:gravity="center"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="96dp"
-            android:layout_height="96dp"
-            android:src="@drawable/ic_udhar"
-            android:contentDescription="@string/app_name"
-            app:tint="@color/white" />
+        <!-- App Icon Container with Soft Glow Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardIcon"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="12dp"
+            app:cardBackgroundColor="@color/white"
+            app:strokeWidth="2dp"
+            app:strokeColor="#33FFFFFF">
+
+            <ImageView
+                android:id="@+id/ivAppIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/app_icon"
+                android:contentDescription="@string/app_name" />
+        </com.google.android.material.card.MaterialCardView>
 
         <TextView
+            android:id="@+id/tvAppName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/app_name"
+            android:layout_marginTop="20dp"
+            android:text="SMART UDDHAR"
             android:textColor="@color/white"
-            android:textSize="32sp"
-            android:textStyle="bold" />
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.06" />
 
         <TextView
+            android:id="@+id/tvTagline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="6dp"
             android:text="@string/app_tagline"
             android:textColor="#E8F5ED"
-            android:textSize="16sp" />
+            android:textSize="15sp"
+            android:letterSpacing="0.02" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="32dp"
+            android:indeterminateTint="#B2DFDB" />
     </LinearLayout>
 
-    <ProgressBar
+    <!-- Subtle Developer Credit at the Bottom -->
+    <TextView
+        android:id="@+id/tvDeveloperCredit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="48dp"
-        android:indeterminateTint="@color/white" />
+        android:layout_marginBottom="16dp"
+        android:text="Developer: Sanghani Meet"
+        android:textColor="#B2DFDB"
+        android:textSize="11sp"
+        android:alpha="0.7"
+        android:letterSpacing="0.03" />
 </RelativeLayout>

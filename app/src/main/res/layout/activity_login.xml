@@ -129,17 +129,6 @@
                     android:layout_marginTop="12dp"
                     android:text="@string/register_button" />
 
-                <TextView
-                    android:id="@+id/tvQuickDemo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="16dp"
-                    android:padding="8dp"
-                    android:text="Demo: Username 'admin', Password 'password123'"
-                    android:textColor="@color/primary_green"
-                    android:textSize="12sp"
-                    android:textStyle="bold" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
