@@ -65,17 +65,19 @@
             android:indeterminateTint="#B2DFDB" />
     </LinearLayout>
 
-    <!-- Subtle Developer Credit at the Bottom -->
+    <!-- Secretly Revealed Developer Credit (Hidden by default, shown ONLY when app icon is tapped 3 times quickly) -->
     <TextView
         android:id="@+id/tvDeveloperCredit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="24dp"
+        android:visibility="gone"
+        android:gravity="center"
         android:text="Developer: Sanghani Meet"
-        android:textColor="#B2DFDB"
-        android:textSize="11sp"
-        android:alpha="0.7"
-        android:letterSpacing="0.03" />
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.04" />
 </RelativeLayout>
