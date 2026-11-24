@@ -13,6 +13,8 @@ import androidx.appcompat.app.AlertDialog
 import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
 import com.marwadiuniversity.radhe.R
+import com.marwadiuniversity.radhe.activities.AboutAppActivity
+import com.marwadiuniversity.radhe.activities.DeveloperCreditsActivity
 import com.marwadiuniversity.radhe.activities.auth.LoginActivity
 import com.marwadiuniversity.radhe.activities.auth.ShopSetupActivity
 import com.marwadiuniversity.radhe.activities.staff.StaffManagementActivity
@@ -112,29 +114,11 @@ class SettingsFragment : Fragment() {
     }
 
     private fun showDeveloperCreditsDialog() {
-        DeveloperSecretHelper.showDeveloperCreditsDialog(requireActivity())
+        startActivity(Intent(requireContext(), DeveloperCreditsActivity::class.java))
     }
 
     private fun showAboutAppDialog() {
-        AlertDialog.Builder(requireContext())
-            .setTitle("About Smart Udhar")
-            .setMessage(
-                """
-                📱 Smart Udhar v1.0.0
-                "Smart Hisab, Easy Vyapar"
-                
-                A digital ledger & credit accounting application built for pan shops and Kirana retailers.
-                
-                Features:
-                • Customer Udhar Management
-                • Payment Collection & Ledger
-                • Product Inventory
-                • Native PDF Receipts & WhatsApp Reminders
-                • Offline-first SQLite database
-                """.trimIndent()
-            )
-            .setPositiveButton("Close", null)
-            .show()
+        startActivity(Intent(requireContext(), AboutAppActivity::class.java))
     }
 
     private fun showLanguageDialog() {

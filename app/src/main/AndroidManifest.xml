@@ -46,6 +46,8 @@
         <activity android:name=".activities.assistant.AIAssistantActivity" />
         <activity android:name=".activities.assistant.VoicePurchaseActivity" />
         <activity android:name=".activities.staff.StaffManagementActivity" />
+        <activity android:name=".activities.DeveloperCreditsActivity" />
+        <activity android:name=".activities.AboutAppActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
