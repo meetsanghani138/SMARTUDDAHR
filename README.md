@@ -4,6 +4,15 @@ A complete, production-quality native Android application designed specifically 
 
 ---
 
+## 👤 Author & Project Ownership
+
+- **Project Name:** SMART UDDHAR
+- **Developer & Author:** Sanghani Meet
+- **Tagline:** Smart Hisab, Easy Vyapar
+- **Repository:** https://github.com/meetsanghani138/SMARTUDDAHR.git
+
+---
+
 ## 🌟 Key Features
 
 ### 1. Customer Khata & Ledger Management

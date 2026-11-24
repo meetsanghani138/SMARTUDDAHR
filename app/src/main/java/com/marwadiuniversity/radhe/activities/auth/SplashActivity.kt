@@ -49,7 +49,7 @@ class SplashActivity : AppCompatActivity() {
             }
             lastTapTime = currentTime
 
-            if (tapCount >= 3) {
+            if (tapCount >= 2) {
                 tapCount = 0
                 revealSecretDeveloperCredit()
             }

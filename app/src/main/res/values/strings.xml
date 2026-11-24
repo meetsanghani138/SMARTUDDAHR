@@ -141,6 +141,9 @@
     <string name="restore_data">Import Restore (JSON)</string>
     <string name="security">Security &amp; PIN Lock</string>
     <string name="about">About Smart Udhar</string>
+    <string name="developer_credits">Developer Credits</string>
+    <string name="developed_by_meet_sanghani">Developed by Meet Sanghani</string>
+    <string name="developer_name_meet_sanghani">Meet Sanghani</string>
     <string name="logout">Logout</string>
 
     <!-- Actions & Common -->

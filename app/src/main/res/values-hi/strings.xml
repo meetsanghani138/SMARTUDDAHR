@@ -23,4 +23,6 @@
     <string name="send_whatsapp">व्हाट्सएप रिमाइंडर</string>
     <string name="voice_entry">वॉइस प्रविष्टि</string>
     <string name="ai_assistant">एआई सहायक</string>
+    <string name="developer_credits">डेवलपर क्रेडिट्स</string>
+    <string name="developed_by_meet_sanghani">Developed by Meet Sanghani</string>
 </resources>

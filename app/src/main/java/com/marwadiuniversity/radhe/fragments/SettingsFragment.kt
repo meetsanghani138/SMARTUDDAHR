@@ -2,18 +2,23 @@ package com.marwadiuniversity.radhe.fragments
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
+import com.marwadiuniversity.radhe.R
 import com.marwadiuniversity.radhe.activities.auth.LoginActivity
 import com.marwadiuniversity.radhe.activities.auth.ShopSetupActivity
 import com.marwadiuniversity.radhe.activities.staff.StaffManagementActivity
 import com.marwadiuniversity.radhe.databinding.FragmentSettingsBinding
 import com.marwadiuniversity.radhe.utils.BackupRestoreManager
+import com.marwadiuniversity.radhe.utils.DeveloperSecretHelper
 import com.marwadiuniversity.radhe.utils.SessionManager
 
 class SettingsFragment : Fragment() {
@@ -21,6 +26,10 @@ class SettingsFragment : Fragment() {
     private val binding get() = _binding!!
 
     private lateinit var sessionManager: SessionManager
+
+    private var secretTapCount = 0
+    private var secretLastTapTime = 0L
+    private val secretHandler = Handler(Looper.getMainLooper())
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -36,6 +45,36 @@ class SettingsFragment : Fragment() {
         sessionManager = SessionManager(requireContext())
 
         setupClickListeners()
+        setupSecretGesture()
+    }
+
+    private fun setupSecretGesture() {
+        binding.tvSecretDevCreditSettings.visibility = View.GONE
+
+        val secretTapListener = View.OnClickListener {
+            val currentTime = System.currentTimeMillis()
+            if (currentTime - secretLastTapTime < 800) {
+                secretTapCount++
+            } else {
+                secretTapCount = 1
+            }
+            secretLastTapTime = currentTime
+
+            if (secretTapCount >= 2) {
+                secretTapCount = 0
+                binding.tvSecretDevCreditSettings.visibility = View.VISIBLE
+                val fadeIn = AnimationUtils.loadAnimation(requireContext(), R.anim.splash_fade_in)
+                binding.tvSecretDevCreditSettings.startAnimation(fadeIn)
+
+                secretHandler.postDelayed({
+                    if (_binding != null) {
+                        binding.tvSecretDevCreditSettings.visibility = View.GONE
+                    }
+                }, 3000)
+            }
+        }
+
+        binding.tvSettingsHeaderTitle.setOnClickListener(secretTapListener)
     }
 
     private fun setupClickListeners() {
@@ -73,19 +112,7 @@ class SettingsFragment : Fragment() {
     }
 
     private fun showDeveloperCreditsDialog() {
-        AlertDialog.Builder(requireContext())
-            .setTitle("Developer Credits")
-            .setMessage(
-                """
-                👨‍💻 Developer Name: Dhruv Nathani
-                
-                🎓 Guided By: Prof. Jiger Dave
-                
-                🏛️ University: Marwadi University
-                """.trimIndent()
-            )
-            .setPositiveButton("OK", null)
-            .show()
+        DeveloperSecretHelper.showDeveloperCreditsDialog(requireActivity())
     }
 
     private fun showAboutAppDialog() {

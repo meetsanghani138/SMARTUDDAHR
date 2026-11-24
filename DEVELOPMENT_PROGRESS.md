@@ -21,3 +21,9 @@
 - [x] **4. Mandatory Workflow & Unit Testing**
   - Test task `app:testDebugUnitTest`: **8 passed, 0 skipped, 0 failed**.
   - Build task `app:assembleDebug`: **Build finished successfully**.
+
+- [x] **5. Developer Credits & Secret Double-Tap Attribution**
+  - Corrected spelling to **"Developed by Meet Sanghani"** and **"Meet Sanghani"**.
+  - Secret double-tap gesture implemented application-wide via [SmartUdharApplication.kt](file:///E:/Radhe/app/src/main/java/com/marwadiuniversity/radhe/SmartUdharApplication.kt) & [DeveloperSecretHelper.kt](file:///E:/Radhe/app/src/main/java/com/marwadiuniversity/radhe/utils/DeveloperSecretHelper.kt) to reveal "Developed by Meet Sanghani" on every screen.
+  - Secret reveal also integrated on Splash screen and Settings screen header.
+  - Developer Credits dialog in Settings updated to show **Meet Sanghani** while preserving **Guided By: Prof. Jiger Dave** and **University: Marwadi University** unchanged.

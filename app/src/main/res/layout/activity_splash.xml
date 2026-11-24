@@ -75,7 +75,7 @@
         android:layout_marginBottom="24dp"
         android:visibility="gone"
         android:gravity="center"
-        android:text="Developer: Sanghani Meet"
+        android:text="Developed by Meet Sanghani"
         android:textColor="@color/white"
         android:textSize="13sp"
         android:textStyle="bold"
